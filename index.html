@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="style.css" />
     <!--current date and time-->
     <title>Work Day Scheduler</title>
+    
   </head>
   <body>
     <header class="jumbotron">
@@ -30,84 +31,74 @@
     </header>
     <div class="container-fluid"></div>
     <div class="row">
-    <div class="col-1 hour">
+    <div class="col-1">
         <p>9am</p>
     </div>
-    <textarea class="col-10"></textarea>
+    <textarea name="textarea" id="1" class="col-10"></textarea>
     <button class="col-1 saveBtn fas fa-lock"></button>
     </div>
     <div class="row">
         <div class="col-1 hour">
             <p>10am</p>
         </div>
-        <textarea class="col-10"></textarea>
+        <textarea name="textarea" id="2" class="col-10"></textarea>
         <button class="col-1 saveBtn fas fa-lock"></button>
         </div>
         <div class="row">
             <div class="col-1 hour">
                 <p>11am</p>
             </div>
-            <textarea class="col-10"></textarea>
+            <textarea name="textarea" id="3" class="col-10"></textarea>
             <button class="col-1 saveBtn fas fa-lock"></button>
             </div> 
             <div class="row">
                 <div class="col-1 hour">
                     <p>12pm</p>
                 </div>
-                <textarea class="col-10"></textarea>
+                <textarea name="textarea" id="4" class="col-10"></textarea>
                 <button class="col-1 saveBtn fas fa-lock"></button>
                 </div>
                 <div class="row">
                     <div class="col-1 hour">
                         <p>1pm</p>
                     </div>
-                    <textarea class="col-10"></textarea>
+                    <textarea name="textarea" id="5" class="col-10"></textarea>
                     <button class="col-1 saveBtn fas fa-lock"></button>
                     </div>
                     <div class="row">
                         <div class="col-1 hour">
                             <p>2pm</p>
                         </div>
-                        <textarea class="col-10"></textarea>
+                        <textarea name="textarea" id="6" class="col-10"></textarea>
                         <button class="col-1 saveBtn fas fa-lock"></button>
                         </div>
                         <div class="row">
                             <div class="col-1 hour">
                                 <p>3pm</p>
                             </div>
-                            <textarea class="col-10"></textarea>
+                            <textarea name="textarea" id="7" class="col-10"></textarea>
                             <button class="col-1 saveBtn fas fa-lock"></button>
                             </div>
                             <div class="row">
                                 <div class="col-1 hour">
                                     <p>4pm</p>
                                 </div>
-                                <textarea class="col-10"></textarea>
+                                <textarea name="textarea" id="8" class="col-10"></textarea>
                                 <button class="col-1 saveBtn fas fa-lock"></button>
                                 </div>
                                 <div class="row">
                                     <div class="col-1 hour">
                                         <p>5pm</p>
                                     </div>
-                                    <textarea class="col-10"></textarea>
+                                    <textarea name="textarea" id="9" class="col-10"></textarea>
                                     <button class="col-1 saveBtn fas fa-lock"></button>
                                     </div>
-        
- <script>
-  var header= document.header;
-  const m= moment("i");
-   var m2 = m.format("dddd[.] mmm Do");
-    var m3 = m.format("yyyy");
-    $(currentDay).text(m2);
-        $('.info').each(function(){
-         var currentTimes = moment().hours();
-         var currentTime = Number(currentTime);
-        });
-    var currentTime=i;
-     </script>
+    
+ 
+
       <!-- Timeblocks go here -->
-    <script src="./javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
