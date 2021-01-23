@@ -12,7 +12,6 @@ $('.saveBtn').on('click', function (event) {
 
 var textarea = $(this).siblings('textarea')
     // console.log(textarea.val())
-    // console.log(textarea.attr('id'))
 
 var id = textarea.attr('id');
 var val = textarea.val();
