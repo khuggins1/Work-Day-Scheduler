@@ -1,28 +1,32 @@
 var header = document.header;
 const now = moment();
 var m = now.format("dddd, MMM Do YYYY hh:mm:ss");
+
+
 $(currentDay).text(m)
 
-$('.timeBlock').each(function(){
-    let currentTime = moment().hours();
+$('.saveBtn').on('click', function (event) {
+    // console.log('click'),
+    // console.log(event.target)
+    // console.log($(this).siblings()[1])
 
-    let currentHour = Number(currentTime);
+var textarea = $(this).siblings('textarea')
+    // console.log(textarea.val())
+    // console.log(textarea.attr('id'))
 
-    let timeId = $(this).children("div").children("p").attr("id");
+var id = textarea.attr('id');
+var val = textarea.val();
 
-    let taskTime = Number(timeId);
-
-    if(taskTime < currentHour){
-
-        $(this).children(".textarea").addClass(".pre");
-    }
-    else if(taskTime === currentHour){
-
-        $(this).children(".textarea").addClass(".now");
-    }
-    else {
-
-        $(this).children(".textarea").addClass(".tomorrow");
-    }
+localStorage.setItem(id,JSON.stringify(val))
 });
 
+
+function renderStorage () {
+    $('textarea').each (function (i) {
+     var currentText = (i + 9);
+     if (($this).attr(id) === currentText){{
+
+     }}
+    }
+    )
+}
