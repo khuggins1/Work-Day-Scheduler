@@ -1,5 +1,8 @@
 # Work Day Scheduler 
 
+<img width="1780" alt="Screen Shot 2021-01-23 at 2 10 31 PM" src="https://user-images.githubusercontent.com/70423368/105615360-cfe6ae80-5d84-11eb-8eee-2a4d8816a575.png">
+
+
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
